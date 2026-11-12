@@ -1,0 +1,4 @@
+# This is a source package the user compiles on their own machine.
+# native tunes rustfft's SIMD paths (AVX2/NEON/etc.) for the CPU that builds it.
+[build]
+rustflags = ["-C", "target-cpu=native"]
